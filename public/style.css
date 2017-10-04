@@ -1,1 +1,28 @@
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
+header {
+  text-align: center;
+  color: #ffffff;
+}
+
+header h1 {
+  background-color: #333333;
+  margin: 0;
+}
+
+header a {
+  display: block;
+  background-color: #D3D3D3;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: solid 1px #ffffff;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}

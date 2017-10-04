@@ -3,20 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Contacts</title>
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">.
+    <link rel="stylesheet" type="text/css" href="http://localhost:4567/normalize.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:4567/style.css">
   </head>
-  <body>
-    <header>
-      <h1>Bitmaker CRM</h1>
-      <a href="/">Home</a>
-      <a href="#">Add a contact</a>
-      <a href="/about">about</a>
-    </header>
-    <main>
-    </main>
-    <%= yield %>
-    <footer>
-      <p>&copy; Bitmaker 2017</p>
-    </footer>
-  </body>
+  <div class="wrapper">
+    <body>
+      <header>
+        <h1>Bitmaker CRM</h1>
+        <a href="/">Home</a>
+        <a href="#">Add a contact</a>
+        <a href="/about">about</a>
+      </header>
+      <main>
+        <%= yield %>
+      </main>
+      <footer>
+        <p>&copy; Bitmaker 2017</p>
+      </footer>
+    </body>
+  </div>
 </html>
