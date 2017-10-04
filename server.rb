@@ -6,11 +6,12 @@ get '/' do
 end
 
 get '/contacts' do
-#In this new route, create an instance variable containing a collection
-#of all the contacts in your database
-  # @contacts = []
   @contacts = Contact.all
   erb :contacts
+end
+
+get '/about' do
+  erb :about
 end
 
 after do
