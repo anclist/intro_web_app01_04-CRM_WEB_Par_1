@@ -62,6 +62,25 @@ put '/contacts/:id' do
   end
 end
 
+get '/contacts/:id/delete' do
+  @contact = Contact.find_by(id: params[:id].to_i)
+  if @contact
+    erb :delete_contact
+  else
+    raise Sinatra::NotFound
+  end
+end
+
+delete '/contacts/:id' do
+  @contact = Contact.find(params[:id].to_i)
+  if @contact
+    @contact.delete
+    redirect to('/contacts')
+  else
+    raise Sinatra::NotFound
+  end
+end
+
 after do
   ActiveRecord::Base.connection.close
 end
