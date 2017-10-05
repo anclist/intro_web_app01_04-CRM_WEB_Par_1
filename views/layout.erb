@@ -8,13 +8,14 @@
     <link rel="stylesheet" type="text/css" href="http://localhost:4567/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
-  <div class="wrapper">
-    <body>
+  <body>
+    <div class="wrapper">
       <header>
         <h1>Bitmaker CRM</h1>
         <a href="/">Home</a>
-        <a href="/contacts/new">Add a contact</a>
-        <a href="/about">about</a>
+        <a href="/contacts">All Contacts</a>
+        <a href="/contacts/new">New Contact</a>
+        <a href="/about">About</a>
       </header>
       <main>
         <%= yield %>
@@ -22,6 +23,6 @@
       <footer>
         <p>&copy; Bitmaker 2017</p>
       </footer>
-    </body>
-  </div>
+    </div>
+  </body>
 </html>

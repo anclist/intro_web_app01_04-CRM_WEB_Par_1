@@ -12,6 +12,10 @@ html {
   max-width: 800px;
 }
 
+p {
+  font-size: 1.3em;
+}
+
 header {
   color: #ffffff;
   text-align: center;
